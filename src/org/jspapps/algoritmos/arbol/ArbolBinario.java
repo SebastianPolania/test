@@ -17,7 +17,7 @@ public class ArbolBinario {
 
     public void insertar(Nodo nuevo, Nodo pivote) {
         if (this.raiz == null) {
-            raiz = new Nodo(5);
+            raiz = nuevo;
         } else {
             if (nuevo.getData() <= pivote.getData()) {
                 if (pivote.getRefIzq() == null) {
